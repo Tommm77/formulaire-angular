@@ -1,0 +1,53 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
+<form [formGroup]="form" class="container">
+  <h1 class="form">FORMULAIRE</h1>
+  <h1>Elève 1 :</h1>
+  <p>Nom :</p>
+  <input class="input" type="text" name="firstname" formControlName="nom1" />
+  <p>Prénom :</p>
+  <input class="input" type="text" name="lastname" formControlName="prenom1" />
+  <h1>Elève 2 :</h1>
+  <p>Nom :</p>
+  <input class="input" type="text" name="firstname" formControlName="nom2" />
+  <p>Prénom :</p>
+  <input class="input" type="text" name="lastname" formControlName="prenom2" />
+  <h1>Elève 3 :</h1>
+  <p>Nom :</p>
+  <input class="input" type="text" name="firstname" formControlName="nom3" />
+  <p>Prénom :</p>
+  <input class="input" type="text" name="lastname" formControlName="prenom3" />
+  <button type="submit" class="btn" (click)="submit()">Valider</button>
+  <button
+    type="submitnom"
+    class="btn"
+    (click)="submitnom()"
+    (click)="submitnomp()"
+  >
+    Afficher Nom
+  </button>
+  <div id="app2"></div>
+
+  <button
+    type="submit"
+    class="btn"
+    (click)="submitprenom()"
+    (click)="submitprenomp()"
+  >
+    Afficher Prenom
+  </button>
+  <div id="app"></div>
+</form>
+
+<form [formGroup]="formindex" class="container">
+  <p>Index :</p>
+  <input class="input" type="text" name="firstname" formControlName="index" />
+  <button type="submit" class="btn" (click)="submitindex()">
+    Afficher Couple
+  </button>
+  <div id="app3"></div>
+</form>
